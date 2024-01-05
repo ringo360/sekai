@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css?family=Roboto:500,900,100,300,700,400&subset=latin,cyrillic-ext,cyrillic,latin-ext";
+@import "https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic,latin-ext";
+
+header {
+    width: 100%; /* 幅いっぱいを指定 */
+    height: 50px; /* 高さを50pxに指定 */
+    background: #333333; /* Background Color */
+    padding: 20px 50px; /* ヘッダーに上下左右それぞれ余白を指定 */
+    box-sizing: border-box; /* padding分を含んで幅を100%にするため */
+    position: fixed; /* ウィンドウを基準に画面に固定 */
+    top: 0; /* 上下の固定位置を上から0pxにする */
+    left: 0; /* 左右の固定位置を左から0pxにする */
+    display: flex; /* 中の要素を横並びにする */
+    align-items: center; /* 中の要素を上下中央に並べる */
+}
+
+header .gnav .menu {
+    display: flex; /* 中の要素を横並びにする */
+}
+
+header .gnav .menu li {
+    list-style: none; /* リストの[・]を消す */
+}
+
+header .gnav .menu li + li {
+    margin-left: 40px; /* メニューそれぞれに間隔をあけるため */
+}
+
+header a {
+	color: white;
+}
+header a:hover {
+	color: aquamarine;
+}
+
+body {
+	padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
+	font-family: roboto, sans-serif;
+	color: white;
+	background-size: cover;
+	background-position: center;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("assets/background.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: roboto, sans-serif;
+	font-weight: 300;
+	line-height: 100%
+}
+
+
+.parallax {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
