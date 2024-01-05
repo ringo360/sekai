@@ -38,11 +38,14 @@ body {
 	padding-top: 90px; /* ヘッダーの後ろに要素が隠れないようにするため */
 	font-family: roboto, sans-serif;
 	color: white;
+	background-color: #4f4f4f;
+	/*
 	background-size: cover;
 	background-position: center;
 	background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url("assets/background.jpg");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+	*/
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: roboto, sans-serif;
@@ -51,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-.parallax {
-	background-size: cover;
-	background-repeat: no-repeat;
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
 }
